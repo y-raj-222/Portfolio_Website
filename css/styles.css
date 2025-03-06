@@ -1,0 +1,535 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    position: relative;
+    color:black;
+}
+
+/* Navigation */
+nav {
+    background-color: #f5f5f5; 
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 400;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    left: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #162447;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 85vh;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 100px;
+    padding: 20px;
+    
+}
+.profile-img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.hero-content h1, .hero-content h2 {
+    margin: 10px 0;
+}
+
+.hero p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    color: white;
+    background: #ff5722;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn.secondary {
+    background: #555;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.footer {
+    background-color: #f5f5f5; 
+   align-items: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.footer p {
+    color: black;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .edu-github-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .education-details, .github-details {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .education-github {
+        padding: 30px 15px;
+    }
+    .education-details ul li, .github-details ul li {
+        font-size: 1em;
+    }
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+    .hero {
+        padding: 30px 10px;
+    }
+    .hero-content {
+        max-width: 90%;
+    }
+    .edu-github-content {
+        flex-direction: column;
+    }
+    .education-details, .github-details {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    .hero h1 {
+        font-size: 1.8em;
+    }
+    .hero h2 {
+        font-size: 1.4em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+}
+
+
+/* project css starts here */
+.projects {
+    text-align: center;
+    padding: 60px 5%;
+    background-color: #162447;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.projects p {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Project Cards */
+.project-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height: 20vh;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    background: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .projects {
+        padding: 50px 5%;
+    }
+}
+/* projects css ends herer */
+
+/* contact css starts here */
+
+/* Contact Section */
+h2, h3 {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Section */
+.contact {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #162447;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-info, .contact-form {
+   
+    padding: 30px;
+    border-radius: 8px;
+    width: 60%;
+}
+.forms{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+
+  
+}
+.forms h2,.message{
+    color: black;
+}
+.contact-info h3, .contact-form h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* Contact Form Styles */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .contact-form {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .contact h2 {
+        font-size: 1.8em;
+    }
+
+    .contact p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact h2 {
+        font-size: 1.6em;
+    }
+
+    .contact-info h3, .contact-form h3 {
+        font-size: 1.3em;
+    }
+
+    .contact-info p, .contact-form label {
+        font-size: 1em;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 0.9em;
+    }
+}
+/* contact css ends here */
+
+/* video demo starts here */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px;
+    text-align: center;
+    background-color: #162447;
+}
+.video {
+    width: 80%;
+    height: 60vh;
+    max-width: 900px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    align-items: center;
+}
+.video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.para {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.6;
+    color: white;
+}
+a.video-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 18px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+a.video-link:hover {
+    background: #0056b3;
+}
+/* video demo ends here */
+
+
+/* site report css code starts here */
+/* Main Report Styles */
+.site-report {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #162447;
+    font-family: 'Arial', sans-serif;
+}
+
+.site-report .intro {
+    margin-bottom: 40px;
+    width: 90%;
+    padding: 25px 0;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-report .intro h2 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.site-report .intro p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Image Styling within Intro */
+.site-report .intro img {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .site-report {
+        padding: 20px 0;
+    }
+
+    .site-report .intro {
+        padding: 20px 0;
+    }
+
+    .site-report .intro h2 {
+        font-size: 24px;
+    }
+
+    .site-report .intro ul li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-report .intro h2 {
+        font-size: 20px;
+    }
+
+    .site-report .intro p,
+    .site-report .intro ul li {
+        font-size: 14px;
+    }
+
+    .site-report {
+        padding: 10px 0;
+    }
+
+    .site-report .intro {
+        padding: 15px 0;
+    }
+}
+
+/* site report css code ends here */
