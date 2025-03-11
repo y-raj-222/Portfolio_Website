@@ -3,57 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Reports</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Site Report - RajaBabu Ray Yadav</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="logo">RBY</div>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="project.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="videoDemo.html">Video Demo</a></li>
-                <li><a href="sitereport.html">Site Report</a></li>
+                <li><a href="sitereport.html" class="active">Site Report</a></li>
+                <li><a href="videodemo.html">Video Demo</a></li>
             </ul>
+          
         </nav>
     </header>
-    <!-- site report of 250 words  -->
-    <main class="site-report">
-        <section class="intro">
-            <h2>Development Experience</h2>
-            <p>This portfolio project has been an enriching experience, allowing me to apply core web development concepts. I started by structuring the website using semantic HTML elements, ensuring proper organization and accessibility. Learning CSS for styling and responsiveness was an exciting challenge, as I experimented with layout techniques like Flexbox and Grid.</p>
-            <p>During the process, I encountered difficulties in structuring the navigation bar and ensuring it adapted correctly on different devices. Additionally, debugging CSS conflicts was a time-consuming task, but with practice, I improved my problem-solving skills. Through iteration and testing, I enhanced the website’s visual appeal and user experience.</p>
-        </section>
-        <section class="intro">
-            <h2>Design Decisions</h2>
-            <p>For the design, I opted for a modern, minimalistic style with a sans-serif font to enhance readability. I selected a color scheme that balanced professionalism and creativity, taking inspiration from design platforms such as <a href="https://www.behance.net/" target="_blank">Behance</a> and <a href="https://dribbble.com/" target="_blank">Dribbble</a>.</p>
-            <p>Flexbox and Grid were used to structure content, allowing for a clean and adaptable layout. I also incorporated hover effects and smooth transitions to improve user interaction. Consistency was maintained across all pages by using a shared stylesheet, ensuring a seamless browsing experience.</p>
-        </section>
-        <section class="intro">
-            <h2>Challenges and Solutions</h2>
-            <p>One of the primary challenges I faced was ensuring proper responsiveness across devices. Initially, the layout did not adjust well on smaller screens. I resolved this by implementing media queries and testing the website on multiple devices.</p>
-            <p>Another challenge was ensuring cross-browser compatibility. Some CSS properties rendered differently on different browsers. To address this, I referenced MDN Web Docs and made adjustments to ensure consistent behavior across Chrome, Firefox, and Edge.</p>
-            <p>Additionally, validating my code through W3C validators helped me identify and correct minor syntax errors, leading to a cleaner and more optimized website.</p>
-        </section>
-        <section class="intro">
-            <h2>4. Validation and Testing</h2>
-            <p>All HTML and CSS files were validated using W3C validators. The results confirmed compliance with web standards:</p>
-            <p><img src="images/html1.png" alt="HTML Validation Screenshot"></p>
-            <p><img src="images/html2.png" alt="HTML Validation Screenshot"></p>
-            <p><img src="images/html3.png" alt="HTML Validation Screenshot"></p>
-            <p><img src="images/html4.png" alt="HTML Validation Screenshot"></p>
-            <p><img src="images/html5.png" alt="HTML Validation Screenshot"></p>
-            <p><img src="images/css.png" alt="CSS Validation Screenshot"></p>
-        </section>
-        <section class="intro">
-            <h2>Video Demonstration</h2>
-            <p>The project demonstration video showcases the functionality and design choices of my website. Watch it here: <a href="https://www.youtube.com/yourvideolink" target="_blank">Project Video</a></p>
+
+    <main>
+        <section class="report-section">
+            <div class="report-container">
+                <h2>Site Development Report</h2>
+
+                <h3>Learning Experience</h3>
+                <p>My journey into web development through this module has been both challenging and rewarding. As a computer science student at the University of Northampton, this was my first serious attempt at creating a complete website from scratch. The learning curve was steep, but each challenge helped me grow as a developer.</p>
+                
+                <p>Initially, I struggled with CSS layouts and responsive design. The concept of flexbox and grid systems seemed complex at first, but through consistent practice and referring to resources like <a href="https://css-tricks.com" class="reference-link">CSS-Tricks</a> and <a href="https://developer.mozilla.org" class="reference-link">MDN Web Docs</a>, I gradually became more comfortable with these concepts.</p>
+
+                <blockquote>
+                    "One of my biggest achievements was implementing a fully responsive navigation menu that transforms into a hamburger menu on mobile devices - something I initially thought was impossible without JavaScript!"
+                </blockquote>
+
+                <h3>Development Process</h3>
+                <p>I approached the development in several phases:</p>
+                <ul>
+                    <li><strong>Planning Phase (Week 1-2):</strong> Researched portfolio websites, created wireframes, and planned the content structure</li>
+                    <li><strong>Initial Development (Week 3-4):</strong> Set up the basic HTML structure and implemented the core CSS styling</li>
+                    <li><strong>Responsive Design (Week 5-6):</strong> Adapted the layout for different screen sizes and implemented the mobile menu</li>
+                    <li><strong>Testing & Refinement (Week 7-8):</strong> Conducted cross-browser testing and fixed various bugs</li>
+                </ul>
+
+                <h3>Design Decisions</h3>
+                <p>The design choices were influenced by modern portfolio websites and material design principles:</p>
+                <ul>
+                    <li><strong>Color Scheme:</strong> I chose a professional color palette with #2c3e50 (dark blue) and #3498db (light blue) as primary colors. These colors were inspired by the University of Northampton's brand colors and create a professional, academic feel.</li>
+                    <li><strong>Typography:</strong> I selected 'Segoe UI' as the primary font for its excellent readability and modern appearance. The font stack includes fallbacks ensuring consistent display across different operating systems.</li>
+                    <li><strong>Layout:</strong> The clean, minimalist layout was inspired by websites like <a href="https://www.awwwards.com" class="reference-link">Awwwards</a> and <a href="https://dribbble.com" class="reference-link">Dribbble</a>.</li>
+                </ul>
+
+                <h3>Challenges and Solutions</h3>
+                <p>The biggest challenges I faced included:</p>
+                <ul>
+                    <li>Creating a responsive navigation menu without JavaScript</li>
+                    <li>Maintaining consistent spacing and alignment across different screen sizes</li>
+                    <li>Ensuring proper contrast ratios for accessibility</li>
+                    <li>Debugging cross-browser compatibility issues, especially with Firefox</li>
+                </ul>
+
+                <h3>Validation Results</h3>
+                <div class="validation-images">
+                    <p>HTML Validation:</p>
+                    <img src="images/valid1.png" alt="HTML Validation Report">
+                    <img src="images/valid2.png" alt="HTML Validation Report">
+                    <img src="images/valid3.png" alt="HTML Validation Report">
+                    <img src="images/valid4.png" alt="HTML Validation Report">
+                    <img src="images/valid5.png" alt="HTML Validation Report">
+                    <p>CSS Validation:</p>
+                    <img src="images/css.png" alt="CSS Validation Report">
+                </div>
+
+                <h3>Video Demonstration</h3>
+                <p>A complete video walkthrough of the website and its features can be found here: <a href="https://youtube.com/your-video-link"  target="_blank" class="reference-link">Portfolio Website Demo</a></p>
+
+                <h3>Future Improvements</h3>
+                <p>While I'm proud of what I've achieved, there are several areas I'd like to improve in the future:</p>
+                <ul>
+                    <li>Implement dark mode functionality</li>
+                    <li>Add more interactive elements using JavaScript</li>
+                    <li>Improve page load performance</li>
+                    <li>Add more project examples as I complete them</li>
+                </ul>
+            </div>
         </section>
     </main>
-     <!-- Footer  html code-->
-     <footer class="footer">
-        <p>&copy; 2025 Rajababu. All rights reserved.</p>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/y-raj-222" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+               
+            </div>
+            <p>&copy; 2024 RajaBabu Ray Yadav. All rights reserved.</p>
+        </div>
     </footer>
 </body>
-</html>
+</html> 

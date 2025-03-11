@@ -3,49 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Projects - RajaBabu Ray Yadav</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="logo">RBY</div>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="project.html">Projects</a></li>
+                <li><a href="project.html" class="active">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="videoDemo.html">Video Demo</a></li>
                 <li><a href="sitereport.html">Site Report</a></li>
+                <li><a href="videodemo.html">Video Demo</a></li>
             </ul>
+          
         </nav>
     </header>
-    <!-- projects code  -->
-    <section class="projects">
-        <h2>My Projects</h2>
-        <p>Here are some of the projects I have worked on during my studies and personal development.</p>
-        <div class="project-grid">
-            <div class="project-card">
-                <img src="images/bmicalculator.png" alt="BMI Calculator">
-                <h3>BMI Calculator</h3>
-                <p>A Python-based BMI Calculator that helps users determine their Body Mass Index based on height and weight inputs.</p>
-                <a href="https://github.com/yourgithub/bmi-calculator" target="_blank" class="btn">View Project</a>
+
+    <main>
+        <section class="projects-section">
+            <h2 style="text-align: center; margin-bottom: 3rem;">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Book Ordering GUI Application</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Tkinter</span>
+                            <span class="tech-tag">GUI Development</span>
+                        </div>
+                        <p>A desktop application built with Python and Tkinter that allows users to browse, search, and order books. Features include user authentication, shopping cart functionality, and order management.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/y-raj-222/Book_Ordering.git" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>BMI Calculator Program</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Health</span>
+                            <span class="tech-tag">Mathematics</span>
+                        </div>
+                        <p>A Python program that calculates Body Mass Index (BMI) based on user input of height and weight. Provides health category classification and personalized recommendations.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/y-raj-222/bmicalculate.git" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Text Analysis Program</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Data Analysis</span>
+                        </div>
+                        <p>A text analysis tool that processes text documents to extract key metrics such as word frequency, sentiment analysis, and readability scores. Useful for content analysis and research.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/y-raj-222/text_analysis.git" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="project-card">
-                <img src="images/text.png" alt="Text Analysis Program">
-                <h3>Text Analysis Program</h3>
-                <p>A text analysis program built in Python that processes and analyzes text input for word frequency, readability, and sentiment.</p>
-                <a href="https://github.com/yourgithub/text-analysis" target="_blank" class="btn">View Project</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/y-raj-222" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+              
             </div>
-            <div class="project-card">
-                <img src="images/book.png" alt="Book Ordering System">
-                <h3>Python Book Ordering System</h3>
-                <p>A GUI-based book ordering system developed using Tkinter in Python, allowing users to add books, generate orders with voice confirmation, calculate prices, and manage book orders efficiently.</p>
-                <a href="https://github.com/yourgithub/book-ordering-gui" target="_blank" class="btn">View Project</a>
-            </div>
+            <p>&copy; 2024 RajaBabu Ray Yadav. All rights reserved.</p>
         </div>
-    </section>
-     <!-- Footer  code-->
-     <footer class="footer">
-        <p>&copy; 2025 Rajababu. All rights reserved.</p>
     </footer>
 </body>
-</html>
+</html> 
