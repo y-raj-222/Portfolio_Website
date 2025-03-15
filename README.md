@@ -26,10 +26,10 @@ All HTML and CSS files have been validated using **W3C validators**. Validation 
 
 ## Video Demonstration
 A **video demonstration** of the project is available at:  
- [Watch on YouTube](https://www.youtube.com/yourvideolink)
+ [Watch on YouTube](https://youtu.be/6bz-mpNA5RY?feature=shared)
 
 ## How to Run the Project
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourgithubusername/portfolio-website.git
+   git clone https://github.com/y-raj-222/Protfolio_Website.git
    open index.html on your browser
